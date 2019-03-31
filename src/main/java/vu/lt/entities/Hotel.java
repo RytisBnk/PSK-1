@@ -23,7 +23,7 @@ public class Hotel implements Serializable {
     @Column(name = "NAME")
     private String name;
     private String address;
-    @OneToMany(mappedBy = "hotel")
+    @OneToMany(mappedBy = "hotel", fetch = FetchType.EAGER)
     private List<Room> rooms;
 
     @Override
