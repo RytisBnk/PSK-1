@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Getter @Setter
-@Table(name = "ROOMS")
+@Table(name = "ROOM")
 @NamedQueries({
         @NamedQuery(name = "Rooms.findAll", query = "select r from Room as r")
 })

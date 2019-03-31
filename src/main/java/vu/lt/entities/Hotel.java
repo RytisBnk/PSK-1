@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "HOTELS")
+@Table(name = "HOTEL")
 @Getter @Setter
 @NamedQueries({
         @NamedQuery(name = "Hotels.findAll", query = "select h from Hotel as h")

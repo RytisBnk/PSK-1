@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "RESERVATIONS")
+@Table(name = "RESERVATION")
 @Getter @Setter
 @NamedQueries({
         @NamedQuery(name = "Reservations.findAll", query = "select r from Reservation as r")
