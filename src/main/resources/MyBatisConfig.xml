@@ -20,5 +20,6 @@
         <mapper resource="mybatis.xml/HotelMapper.xml"/>
         <mapper resource="mybatis.xml/RoomMapper.xml"/>
         <mapper resource="mybatis.xml/ReservationMapper.xml"/>
+        <mapper resource="mybatis.xml/ReservationRoomMapper.xml"/>
     </mappers>
 </configuration>

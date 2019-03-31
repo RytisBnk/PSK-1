@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Hotels myBatis page</title>
+</h:head>
+<h:body>
+    <h2>Hotels: </h2>
+    <ol>
+        <ui:repeat value="#{hotelsMyBatis.allHotels}" var="hotel">
+            <li><h:link value="#{hotel.name}" outcome="/myBatis/rooms?hotelId=#{hotel.id}"/></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <p>Name: </p>
+        <h:inputText value="#{hotelsMyBatis.hotelToCreate.name}" required="true"/>
+        <p>Address: </p>
+        <h:inputText value="#{hotelsMyBatis.hotelToCreate.name}" required="true"/>
+        <h:commandButton value="Create new hotel" action="#{hotelsMyBatis.createHotel}"/>
+    </h:form>
+</h:body>
+</html>
