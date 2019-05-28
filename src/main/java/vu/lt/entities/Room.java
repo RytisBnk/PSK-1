@@ -23,4 +23,7 @@ public class Room {
     private Hotel hotel;
     @ManyToMany(mappedBy = "reservedRooms")
     private List<Reservation> reservations;
+    @Version
+    @Column(name = "OPT_LOCK_VERSION")
+    private Integer version;
 }

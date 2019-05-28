@@ -13,7 +13,9 @@
     <h2>Rooms: </h2>
     <ol>
         <ui:repeat value="#{hotelRooms.hotel.rooms}" var="room">
-            <li>#{room.number}</li>
+            <li>
+                <h:link value="#{room.number}" outcome="roomDetails?roomId=#{room.id}" />
+            </li>
         </ui:repeat>
     </ol>
     <h:form>

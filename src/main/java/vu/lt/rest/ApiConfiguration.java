@@ -1,4 +1,8 @@
 package vu.lt.rest;
 
-public class ApiConfiguration {
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("/api")
+public class ApiConfiguration extends Application {
 }

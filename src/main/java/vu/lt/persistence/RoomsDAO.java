@@ -25,4 +25,8 @@ public class RoomsDAO {
     public Room findOne(long id) {
         return entityManager.find(Room.class, id);
     }
+
+    public Room update(Room room) {
+        return entityManager.merge(room);
+    }
 }

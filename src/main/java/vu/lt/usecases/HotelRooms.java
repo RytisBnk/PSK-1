@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import vu.lt.entities.Hotel;
 import vu.lt.entities.Room;
+import vu.lt.interceptors.LoggedInvocation;
 import vu.lt.persistence.HotelsDAO;
 import vu.lt.persistence.RoomsDAO;
 
@@ -36,6 +37,7 @@ public class HotelRooms {
     }
 
     @Transactional
+    @LoggedInvocation
     public String createRoom() {
         roomToCreate.setHotel(hotel);
         roomsDAO.persist(roomToCreate);
