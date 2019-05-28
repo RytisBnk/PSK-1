@@ -20,7 +20,6 @@ public class RoomNumberGeneratorImpl implements RoomNumberGenerator {
             System.out.println("interrupted");
         }
         Integer generatedNumber = new Random().nextInt(100);
-        System.out.println("Done");
         return new AsyncResult<>(generatedNumber);
     }
 }
