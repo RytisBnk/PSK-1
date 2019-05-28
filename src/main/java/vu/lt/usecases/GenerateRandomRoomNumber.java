@@ -2,8 +2,8 @@ package vu.lt.usecases;
 
 import vu.lt.interceptors.LoggedInvocation;
 import vu.lt.services.RoomNumberGenerator;
+import vu.lt.services.RoomNumberGeneratorImpl;
 
-import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
