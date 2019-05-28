@@ -4,9 +4,7 @@ import org.apache.deltaspike.core.api.future.Futureable;
 
 import javax.decorator.Decorator;
 import javax.decorator.Delegate;
-import javax.ejb.AsyncResult;
 import javax.inject.Inject;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 @Decorator
